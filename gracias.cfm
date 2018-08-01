@@ -3,6 +3,7 @@
     <!-- INICIO Verdadero contenido de la pagina -->
         <div class="text-center">
             <p>
+                  <!-- carita Feliz -->
                 <i class="fas fa-smile-beam fa-6x"></i>
             </p>
             <h3>Gracias por tu compra</h3>
