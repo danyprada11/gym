@@ -3,7 +3,7 @@
     <!-- INICIO Verdadero contenido de la pagina -->
         <h1>Te quedan: #</h1>
         <div class="text-center">
-            <p>
+            <p>                    <!--fa es el tamano -->
                 <i class="fas fa-smile-beam fa-6x"></i>
             </p>
             <h3>Ve al GYM!</h3>
