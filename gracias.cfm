@@ -1,5 +1,8 @@
 <cfinclude template = "lay.cfm"><!-- incluye el archivo donde esta la estructura base inicial, parte superios-->
-    
+    <cfoutput>
+        <h3>#cantidad#x Tiquetes</h3>
+        <h1 class="text-success">Total: $#NumberFormat(total)#</h1>
+    </cfoutput>
     <!-- INICIO Verdadero contenido de la pagina -->
         <div class="text-center">
             <p>
