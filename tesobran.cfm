@@ -1,7 +1,9 @@
 <cfinclude template = "lay.cfm"><!-- incluye el archivo donde esta la estructura base inicial, parte superios-->
     
     <!-- INICIO Verdadero contenido de la pagina -->
-        <h1>Te quedan: #</h1>
+        <cfoutput>
+            <h1>Te quedan: #cantidadDeTiquetesDisponibles#</h1>
+        </cfoutput>
         <div class="text-center">
             <p>                    <!--fa es el tamano -->
                 <i class="fas fa-smile-beam fa-6x"></i>

@@ -21,17 +21,27 @@ entrar al aplicativo--->
         />
 
         <cfset hayTiquetes = !arrayIsEmpty(tiquetes)>
-        
+        <!--
+            -1 para que se vea la cantidad que quedan, ya que si contamos el arreglo no 
+            tomamos en consideracion que desactivamos uno
+        -->
+        <cfset cantidadDeTiquetesDisponibles = ArrayLen(tiquetes)-1>
+
         <cfif hayTiquetes >
+            <!--resta los tiquetes en la base de datos-->
             <cfinvoke 
                 component="Database" 
                 method="consulta" 
                 sql="UPDATE tiquetes SET estado='inactivo' WHERE id='#tiquetes[1].id#'" 
                 returnvariable="tiquetes"
             />
-            <cflocation url = "tesobran.cfm">
+            
+            <!--resta los tiquetes visualmente-->
+            
+            
+            <cfinclude template = "tesobran.cfm">
         <cfelse>
-            <cflocation url = "nohay.cfm">
+            <cfinclude template = "nohay.cfm">
         </cfif>
     <cfelse>
         tu estas mal broder
